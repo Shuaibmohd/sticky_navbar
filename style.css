@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;300;400;500;600;700;800&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 1.4;
+}
+
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo a{
+    font-size: 1.8em;
+    color: #C35E2A;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #222;
+    color: #fff;
+    box-shadow: 2px 3px 10px rgba(0 , 0, 0, 0.5);
+}
+.navbar.show{
+   background-color: #fff;
+    box-shadow: 2px 3px 10px rgba(0 , 0, 0, 0.5);
+}
+.navbar.show a{
+  color: #000;
+}
+
+.navbar .right_nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.right_nav a.active {
+    color: #FFE949;
+}
+.right_nav a:hover {
+    color: #FFE949;
+}
+.navbar .right_nav li{
+    list-style-type: none;
+    margin: 1em;
+}
+
+.container {
+    max-width: 65em;
+    margin-inline: auto;
+    padding: 1em 2em;
+}
+
+.main{
+    background: url(/nature_15.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom top;
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 1em;
+    color: #fff;
+    margin-bottom: 2em;
+}
+.main h1 {
+    font-size: 3em;
+}
+.main p {
+    max-width: 100ch;
+    margin: 1em 0;
+}
+.main h3 {
+    max-width: 100ch;
+    margin: 1em 0;
+}
+
+.explore h3 {
+    font-size: 1.6em;
+    text-align: center;
+}
+.explore p {
+    font-size: 130%;
+    line-height: 32px;
+    margin: 1em 0;
+    text-align: center;
+}
+
+
+@media(max-width: 768px) {
+    .navbar .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .main {
+        height: 100vh;
+    }
+    .main h1 {
+        font-size: 2.7em;
+    }
+}
+
+@media(max-width: 568px) {
+    .right_nav a{
+        font-size: 0.7em;
+    }
+    .main h1 {
+        font-size: 2em;
+        margin-top: 2em;
+    }
+    .main {
+        height: 80vh;
+    }
+
+  
+}
